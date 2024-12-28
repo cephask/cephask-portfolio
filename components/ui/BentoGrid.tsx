@@ -1,12 +1,12 @@
-"use client";
+// "use client";
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import MagicButton from "./MagicButton";
-import Lottie from "react-lottie";
-import { useState } from "react";
-import animationData from "@/data/confetti.json";
-import { IoCopyOutline } from "react-icons/io5";
+// import MagicButton from "./MagicButton";
+// import Lottie from "react-lottie";
+// import { useState } from "react";
+// import animationData from "@/data/confetti.json";
+// import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -50,22 +50,23 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
-  const [copied, setCopied] = useState(false);
+  // const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
-  const handleCopy = () => {
-    const text = "cephaskiprono@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-  };
+  // const handleCopy = () => {
+  //   const text = "cephaskiprono@gmail.com";
+  //   navigator.clipboard.writeText(text);
+  //   setCopied(true);
+  // };
+
   return (
     <div
       className={cn(
@@ -162,12 +163,13 @@ export const BentoGridItem = ({
             </div>
           )}
 
-          {id === 6 && (
+          {/* {id === 6 && (
             <div className="mt-5 relative">
               <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
+                
               >
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
@@ -180,7 +182,7 @@ export const BentoGridItem = ({
                 otherClasses="!bg-[#161A31]"
               />
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>
