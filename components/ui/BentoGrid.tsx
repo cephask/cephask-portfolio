@@ -53,7 +53,7 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    setCopied(false);
+    setCopied(true);
   }, []);
 
   const defaultOptions = {
