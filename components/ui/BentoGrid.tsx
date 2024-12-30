@@ -3,9 +3,9 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import MagicButton from "./MagicButton";
-import Lottie from "react-lottie";
-import { useEffect, useState } from "react";
-import animationData from "@/data/confetti.json";
+// import Lottie from "react-lottie";
+import { useState } from "react";
+// import animationData from "@/data/confetti.json";
 import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
@@ -52,18 +52,18 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  useEffect(() => {
-    setCopied(true);
-  }, []);
+  // useEffect(() => {
+  //   setCopied(false);
+  // }, []);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
   const handleCopy = () => {
     const text = "cephaskiprono@gmail.com";
@@ -174,7 +174,7 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
               </div>
 
               <MagicButton
